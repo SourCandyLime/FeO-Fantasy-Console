@@ -1,1 +1,1 @@
-Z:\FeO\target\debug\libfeo_file.rlib: Z:\FeO\libraries\core\feo-file\src\lib.rs
+/home/sour/feo/target/debug/libfeo_file.rlib: /home/sour/feo/libraries/core/feo-file/src/lib.rs
