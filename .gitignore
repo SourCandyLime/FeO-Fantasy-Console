@@ -1,8 +1,8 @@
 # Rust
-target/
+/target/
 
 # Editor
-.helix/
+/.helix/
 *.swp
 
 # OS
@@ -11,4 +11,4 @@ Thumbs.db
 
 # Generated FeO assets
 *.plug
-*.feo.cache
+*.feo
