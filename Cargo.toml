@@ -1,0 +1,17 @@
+[workspace]
+
+members = [
+    "feo-runtime",
+    "feo-sdk",
+    "feo-render",
+    "feo-math",
+    "feo-color",
+    "feo-memory",
+    "feo-file",
+    "feo-asset",
+    "feo-input",
+    "feo-audio",
+    "feo-physics",
+    "feo-debug",
+    "feo-plug",
+]
