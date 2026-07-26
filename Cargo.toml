@@ -1,5 +1,7 @@
 [workspace]
 
+resolver = "3"
+
 members = [
     "runtime/feo-runtime",
 
@@ -9,3 +11,24 @@ members = [
     "libraries/hardware/*",
     "libraries/tools/*",
 ]
+
+[workspace.dependencies]
+feo-asset   = { path = "libraries/core/feo-asset" }
+feo-file    = { path = "libraries/core/feo-file" }
+feo-plug    = { path = "libraries/core/feo-plug" }
+
+feo-audio   = { path = "libraries/gfx/feo-audio" }
+feo-color   = { path = "libraries/gfx/feo-color" }
+feo-gui     = { path = "libraries/gfx/feo-gui" }
+feo-render  = { path = "libraries/gfx/feo-render" }
+
+feo-input   = { path = "libraries/hardware/feo-input" }
+feo-memory  = { path = "libraries/hardware/feo-memory" }
+feo-system  = { path = "libraries/hardware/feo-system" }
+feo-time    = { path = "libraries/hardware/feo-time" }
+
+feo-debug   = { path = "libraries/tools/feo-debug" }
+feo-math    = { path = "libraries/tools/feo-math" }
+feo-physics = { path = "libraries/tools/feo-physics" }
+
+feo-sdk     = { path = "libraries/sdk/feo-sdk" }

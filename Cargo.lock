@@ -17,6 +17,9 @@ version = "0.0.1"
 [[package]]
 name = "feo-debug"
 version = "0.0.1"
+dependencies = [
+ "owo-colors",
+]
 
 [[package]]
 name = "feo-file"
@@ -53,6 +56,9 @@ version = "0.0.1"
 [[package]]
 name = "feo-runtime"
 version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
 
 [[package]]
 name = "feo-sdk"
@@ -65,3 +71,9 @@ version = "0.0.1"
 [[package]]
 name = "feo-time"
 version = "0.0.1"
+
+[[package]]
+name = "owo-colors"
+version = "4.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d211803b9b6b570f68772237e415a029d5a50c65d382910b879fb19d3271f94d"
