@@ -1,3 +1,14 @@
-/target
-**/*.swp
+# Rust
+/target/
+
+# Editor
+/.helix/
+*.swp
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Generated FeO assets
+*.plug
+*.feo.cache
