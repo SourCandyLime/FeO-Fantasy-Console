@@ -1,24 +1,67 @@
-use feo_debug::{log_boot, Status};
+mod commands;
+
+use commands::*;
+
+use std::io::{self, Write};
+
+fn console() {
+    let commands = commands::all();
+    loop {
+        print!("feo> ");
+
+        // Make sure the prompt appears immediately.
+        io::stdout().flush().unwrap();
+
+        let mut input = String::new();
+        io::stdin().read_line(&mut input).unwrap();
+
+        let parts: Vec<&str> = input.split_whitespace().collect();
+
+        if parts.is_empty() {
+            continue;
+        }
+
+        let name = parts[0];
+        let args = &parts[1..];
+
+        match commands.iter().find(|c| c.name() == name) {
+            Some(command) => match command.execute(args) {
+                CommandResult::Continue => {}
+                CommandResult::Exit => break,
+            },
+            None => println!("Unknown command '{}'. Type 'help' for a list of commands.", name),
+        }
+    }
+}
 
 fn main() {
-    println!("FeO Fantasy Console V0.0.1\n");
-    println!("Booting...\n");
+    println!("FeO Fantasy Console V0.0.1");
+    println!("  Operating System: {}", feo_system::os());
+    println!("  Architecture: {}", feo_system::arch());
+    println!("\nBooting...\n");
 
 
-    log_boot(Status::Ok, "Math");
-    log_boot(Status::Ok, "Memory");
-    log_boot(Status::Ok, "Time");
-    log_boot(Status::Warn, "System");
-    log_boot(Status::Ok, "Asset");
-    log_boot(Status::Warn, "Plug");
-    log_boot(Status::Error, "Render");
-    log_boot(Status::Ok, "Input");
-    log_boot(Status::Warn, "Color");
-    log_boot(Status::Warn, "Audio");
-    log_boot(Status::Warn, "File");
-    log_boot(Status::Warn, "GUI");
-    log_boot(Status::Warn, "Physics");
-    log_boot(Status::Ok, "SDK");
+    let SYS = feo_system::init();
+    feo_clock::init();
+    feo_memory::init();
+    feo_math::init();
 
-    println!("\nFinalizing...")
+    feo_asset::init();
+    feo_file::init();
+    feo_plug::init();
+
+    feo_color::init();
+    feo_render::init();
+    feo_gui::init();
+    
+
+    feo_input::init();
+    feo_audio::init();
+    feo_physics::init();
+
+    feo_sdk::init();
+
+    println!("\nFinalizing...");
+    println!("\nREADY\n");
+    console();
 }

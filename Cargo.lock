@@ -5,14 +5,30 @@ version = 4
 [[package]]
 name = "feo-asset"
 version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
 
 [[package]]
 name = "feo-audio"
 version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
+
+[[package]]
+name = "feo-clock"
+version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
 
 [[package]]
 name = "feo-color"
 version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
 
 [[package]]
 name = "feo-debug"
@@ -24,53 +40,93 @@ dependencies = [
 [[package]]
 name = "feo-file"
 version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
 
 [[package]]
 name = "feo-gui"
-version = "0.0.1"
-
-[[package]]
-name = "feo-input"
-version = "0.0.1"
-
-[[package]]
-name = "feo-math"
-version = "0.0.1"
-
-[[package]]
-name = "feo-memory"
-version = "0.0.1"
-
-[[package]]
-name = "feo-physics"
-version = "0.0.1"
-
-[[package]]
-name = "feo-plug"
-version = "0.0.1"
-
-[[package]]
-name = "feo-render"
-version = "0.0.1"
-
-[[package]]
-name = "feo-runtime"
 version = "0.0.1"
 dependencies = [
  "feo-debug",
 ]
 
 [[package]]
+name = "feo-input"
+version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
+
+[[package]]
+name = "feo-math"
+version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
+
+[[package]]
+name = "feo-memory"
+version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
+
+[[package]]
+name = "feo-physics"
+version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
+
+[[package]]
+name = "feo-plug"
+version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
+
+[[package]]
+name = "feo-render"
+version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
+
+[[package]]
+name = "feo-runtime"
+version = "0.0.1"
+dependencies = [
+ "feo-asset",
+ "feo-audio",
+ "feo-clock",
+ "feo-color",
+ "feo-debug",
+ "feo-file",
+ "feo-gui",
+ "feo-input",
+ "feo-math",
+ "feo-memory",
+ "feo-physics",
+ "feo-plug",
+ "feo-render",
+ "feo-sdk",
+ "feo-system",
+]
+
+[[package]]
 name = "feo-sdk"
 version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
 
 [[package]]
 name = "feo-system"
 version = "0.0.1"
-
-[[package]]
-name = "feo-time"
-version = "0.0.1"
+dependencies = [
+ "feo-debug",
+]
 
 [[package]]
 name = "owo-colors"

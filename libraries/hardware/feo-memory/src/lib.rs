@@ -1,3 +1,3 @@
 pub fn init() {
-    println!("[ OK ] Memory");
+    feo_debug::log_boot(feo_debug::Status::Ok, "MEM", "Extra Info")
 }

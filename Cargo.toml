@@ -25,7 +25,7 @@ feo-render  = { path = "libraries/gfx/feo-render" }
 feo-input   = { path = "libraries/hardware/feo-input" }
 feo-memory  = { path = "libraries/hardware/feo-memory" }
 feo-system  = { path = "libraries/hardware/feo-system" }
-feo-time    = { path = "libraries/hardware/feo-time" }
+feo-clock    = { path = "libraries/hardware/feo-clock" }
 
 feo-debug   = { path = "libraries/tools/feo-debug" }
 feo-math    = { path = "libraries/tools/feo-math" }
