@@ -1,8 +1,8 @@
 # Rust
-/target/
+target/
 
 # Editor
-/.helix/
+.helix/
 *.swp
 
 # OS
