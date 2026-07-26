@@ -1,0 +1,20 @@
+FeO Controller Specifications v0.1
+
+- Digital buttons:
+    A
+    B
+    X
+    Y
+    Start
+    Select
+    L
+    R
+    Lb
+    Rb
+- Analog:
+    Left stick X/Y
+    Right stick X/Y
+    Triggers X/Y (left/right)
+- Button values:
+    0 = released
+    1 = pressed

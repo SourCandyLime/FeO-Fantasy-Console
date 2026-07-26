@@ -1,0 +1,33 @@
+FeO Hardware Specification v0.1
+
+Memory:
+4 GB
+
+Resolution:
+640 x 360
+
+Color:
+RGB 4-5-4
+
+Refresh:
+60 Hz
+
+Input:
+4 virtual controllers
+Standard FeO button layout
+
+Audio:
+16 channels
+Stereo output
+44.1 kHz
+
+Physics:
+60 Hz fixed timestep
+Built-in collision system
+AABB and sphere collision
+
+File Format:
+.feo
+
+Plug Format:
+.plug

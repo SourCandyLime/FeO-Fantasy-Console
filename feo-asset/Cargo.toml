@@ -1,5 +1,5 @@
 [package]
-name = "gavar-file"
+name = "feo-asset"
 version = "0.1.0"
 authors = ["root <taggertallred@gmail.com>"]
 edition = "2018"
