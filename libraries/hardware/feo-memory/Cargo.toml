@@ -1,0 +1,9 @@
+[package]
+name = "feo-memory"
+version = "0.0.1"
+authors = ["Sour"]
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
