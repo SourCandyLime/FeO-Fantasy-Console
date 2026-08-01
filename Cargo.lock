@@ -45,6 +45,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "feo-globals"
+version = "0.1.0"
+
+[[package]]
 name = "feo-gui"
 version = "0.0.1"
 dependencies = [
@@ -70,6 +74,7 @@ name = "feo-memory"
 version = "0.0.1"
 dependencies = [
  "feo-debug",
+ "feo-globals",
 ]
 
 [[package]]
@@ -103,6 +108,7 @@ dependencies = [
  "feo-color",
  "feo-debug",
  "feo-file",
+ "feo-globals",
  "feo-gui",
  "feo-input",
  "feo-math",
@@ -125,7 +131,13 @@ dependencies = [
 name = "feo-system"
 version = "0.0.1"
 dependencies = [
+ "feo-audio",
+ "feo-clock",
  "feo-debug",
+ "feo-globals",
+ "feo-input",
+ "feo-memory",
+ "feo-physics",
 ]
 
 [[package]]

@@ -8,3 +8,6 @@ edition = "2024"
 
 [dependencies]
 feo-debug.workspace = true
+
+[lints]
+workspace = true

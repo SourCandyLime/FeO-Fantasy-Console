@@ -36,15 +36,11 @@ fn console() {
 
 fn main() {
     println!("FeO Fantasy Console V0.0.1");
-    println!("  Operating System: {}", feo_system::os());
-    println!("  Architecture: {}", feo_system::arch());
     println!("\nBooting...\n");
 
-
-    let SYS = feo_system::init();
-    feo_clock::init();
-    feo_memory::init();
     feo_math::init();
+
+    let sys = feo_system::System::init().expect("System Initialization failed");
 
     feo_asset::init();
     feo_file::init();
@@ -54,10 +50,7 @@ fn main() {
     feo_render::init();
     feo_gui::init();
     
-
-    feo_input::init();
-    feo_audio::init();
-    feo_physics::init();
+    
 
     feo_sdk::init();
 

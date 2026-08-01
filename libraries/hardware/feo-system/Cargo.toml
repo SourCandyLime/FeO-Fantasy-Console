@@ -8,3 +8,12 @@ edition = "2024"
 
 [dependencies]
 feo-debug.workspace = true
+feo-globals.workspace = true
+feo-memory.workspace = true
+feo-clock.workspace = true
+feo-input.workspace = true
+feo-audio.workspace = true
+feo-physics.workspace = true
+
+[lints]
+workspace = true
