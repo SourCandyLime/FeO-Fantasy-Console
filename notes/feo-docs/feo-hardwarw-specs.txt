@@ -1,13 +1,16 @@
 FeO Hardware Specification v0.1
 
 Memory:
-4 GB
+4 GB RAM
+4 GB ROM
+4 GB SYSRAM
+4 GB SYSROM
 
 Resolution:
 640 x 360
 
 Color:
-RGB 4-5-4
+RGB 5-6-5
 
 Refresh:
 60 Hz
