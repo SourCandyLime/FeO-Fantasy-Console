@@ -1,10 +1,10 @@
 pub struct Console {
-    commands: Commands
+    commands: Vec<Box<dyn Command>>
 }
 
 impl Console {
     fn new() -> Self {
-        let commands = Commands::new()
+        let commands = crate::commands::all()
         Self {
             commands
         }
